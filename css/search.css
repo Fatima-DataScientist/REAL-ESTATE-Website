@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #151717;
+}
+
+/* Header Styling */
+.header-placeholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #151717;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #151717;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Main Search Container Layout */
+.search-page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+      display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+/* Filter Bar Styling */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  padding: 10px 36px 10px 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #a0aec0;
+}
+
+.dropdown-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-toggle {
+  display: flex;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-btn.active {
+  background-color: #151717;
+  color: #ffffff;
+}
+
+/* Content Layout (Split View) */
+.content-split-view {
+  display: flex;
+  height: calc(100vh - 140px);
+  overflow: hidden;
+}
+
+.map-container {
+  flex: 1;
+  height: 100%;
+  background-color: #e5e3df;
+}
+
+.listings-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+/* Property Card Styling */
+.property-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.property-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(21, 23, 23, 0.85);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-details {
+  padding: 16px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.specs {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.address {
+  font-size: 13px;
+  color: #718096;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer Styling */
+.footer-placeholder {
+  padding: 20px 32px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #718096;
+}
+
+.footer-links a {
+  margin-left: 16px;
+  color: #718096;
+  text-decoration: none;
+}
+/* Update the body to allow standard vertical scrolling for the page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #151717;
+  overflow-y: auto; /* Ensures page scrollbar appears when content exceeds viewport */
+}
+
+/* Adjust the split view height so it takes up visible space but allows scrolling */
+.content-split-view {
+  display: flex;
+  height: 80vh; /* Changed from fixed 100vh minus offset to allow the footer space below */
+  min-height: 500px; /* Ensures map and listings retain usable height on smaller screens */
+  overflow: hidden;
+}
+
+/* Ensure the footer container stays in the document flow and renders clearly */
+#footer-placeholder {
+  width: 100%;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  margin-top: auto;
+}
+
+/* Allow page-level vertical scrolling */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto !important;
+}
+
+/* Ensure the main page container stacks elements vertically */
+.search-page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set a fixed viewport-friendly height on the split view, NOT 100vh */
+.content-split-view {
+  display: flex;
+  height: calc(100vh - 160px); /* Adjust 160px based on header + filter heights */
+  min-height: 500px;
+  flex-shrink: 0;
+}
+
+/* Ensure the footer has dimension and stays below content */
+#footer-placeholder {
+  display: block !important;
+  width: 100%;
+  min-height: 80px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}

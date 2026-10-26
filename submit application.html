@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Online | FIND</title>
+  <link rel="stylesheet" href="css/submit application.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">FIND</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#" class="active">Apply</a>
+      <a href="#">Online Forms</a>
+      <a href="#">Make a Payment</a>
+    </nav>
+    <a href="#" class="login-link">Log In</a>
+  </header>
+
+  <main class="container">
+    <!-- Hero Header -->
+    <section class="hero-section">
+      <div class="hero-text">
+        <span class="badge">APPLY ONLINE</span>
+        <h1>Apply Now, Your Ideal Property Awaits!</h1>
+        <p>Apply now to find your perfect spot! Our streamlined online application makes it quick and easy. Don't miss out – start your journey today!</p>
+      </div>
+      <div class="hero-pattern">
+        <span>❯❯❯</span><br>
+        <span>❯❯❯</span><br>
+        <span>❯❯❯</span>
+      </div>
+    </section>
+
+    <!-- Application Type Toggle -->
+    <div class="toggle-buttons">
+      <button class="btn-toggle active" id="btnFullApp">Full Application</button>
+      <button class="btn-toggle" id="btnCreditCheck">Only the Credit Check</button>
+    </div>
+
+    <form id="rentalForm">
+      <!-- Client's Information -->
+      <section class="form-section">
+        <h2>Client's Information</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label>Client First Name*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Client Last Name*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Phone Number*</label>
+            <input type="tel" required>
+          </div>
+          <div class="field">
+            <label>Date of Birth*</label>
+            <input type="date" required>
+          </div>
+          <div class="field">
+            <label>Email Address*</label>
+            <input type="email" required>
+          </div>
+          <div class="field">
+            <label>Social Security Number*</label>
+            <input type="text" placeholder="000-00-0000" required>
+          </div>
+          <div class="field col-span-2">
+            <label>Permanent Address*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Unit number*</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>State*</label>
+            <select required>
+              <option value="">Select State</option>
+              <option value="NY">New York</option>
+              <option value="CA">California</option>
+              <option value="TX">Texas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>City*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Zip*</label>
+            <input type="text" required>
+          </div>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-label">Do you have pets?*</label>
+          <div class="options">
+            <label><input type="radio" name="pets" value="yes"> Yes</label>
+            <label><input type="radio" name="pets" value="no" checked> No</label>
+          </div>
+        </div>
+
+        <div class="field col-span-2 hidden" id="petSpecifyGroup">
+          <label>Please Specify (if pets)</label>
+          <input type="text" id="petSpecify">
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-label">Is there any other occupant?</label>
+          <div class="options">
+            <label><input type="radio" name="occupant" value="yes"> Yes</label>
+            <label><input type="radio" name="occupant" value="no" checked> No</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rental Information -->
+      <section class="form-section">
+        <h2>Rental Information</h2>
+        <div class="field col-span-2 search-field">
+          <label>Search property</label>
+          <input type="text" placeholder="Search to autofill address below">
+          <small>Select a listing to autofill the address fields below, or fill them manually.</small>
+        </div>
+
+        <div class="form-grid">
+          <div class="field col-span-2">
+            <label>Property Address*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Unit number*</label>
+            <input type="text">
+            <small class="hint">If you don't know the unit number, enter N/A.</small>
+          </div>
+          <div class="field">
+            <label>State*</label>
+            <select required>
+              <option value=""></option>
+              <option value="NY">NY</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>City*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Zip*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Rent amount*</label>
+            <div class="prefix-input"><span>$</span><input type="number" required></div>
+          </div>
+          <div class="field">
+            <label>Lease start date*</label>
+            <input type="date" required>
+          </div>
+          <div class="field">
+            <label>Lease end date*</label>
+            <input type="date" required>
+          </div>
+          <div class="field">
+            <label>Lease Length</label>
+            <input type="text" readonly placeholder="Calculated automatically">
+          </div>
+        </div>
+      </section>
+
+      <!-- Rental History -->
+      <section class="form-section">
+        <h2>Rental History</h2>
+        <div class="form-grid">
+          <div class="field col-span-2">
+            <label>Current Address*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Unit number*</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>State*</label>
+            <select required><option value=""></option><option value="NY">NY</option></select>
+          </div>
+          <div class="field">
+            <label>City*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Zip*</label>
+            <input type="text" required>
+          </div>
+          <div class="field col-span-2">
+            <label>Current Landlord Name*</label>
+            <input type="text" required>
+          </div>
+          <div class="field col-span-2">
+            <label>Landlord's phone*</label>
+            <input type="tel" required>
+          </div>
+        </div>
+      </section>
+
+      <!-- Employment Information -->
+      <section class="form-section">
+        <h2>Employment Information</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label>Employer*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Employer Address*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Contact Person*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Contact Person Phone*</label>
+            <input type="tel" required>
+          </div>
+          <div class="field">
+            <label>Position Title*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Annual Compensation*</label>
+            <div class="prefix-input"><span>$</span><input type="number" required></div>
+          </div>
+          <div class="field">
+            <label>Employed Since*</label>
+            <input type="date" required>
+          </div>
+          <div class="field">
+            <label>*Employment Length</label>
+            <input type="text">
+          </div>
+        </div>
+      </section>
+
+      <!-- Previous Employer Information -->
+      <section class="form-section">
+        <h2>Previous Employer Information</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label>Previous Employer</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>Previous Employer Address</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>Previous Employer Contact Person</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>Previous Employer Contact Person Number</label>
+            <input type="tel">
+          </div>
+          <div class="field">
+            <label>Previous Position Title</label>
+            <input type="text">
+          </div>
+          <div class="field">
+            <label>Previous Annual Compensation</label>
+            <div class="prefix-input"><span>$</span><input type="number"></div>
+          </div>
+          <div class="field">
+            <label>Previously Employed From</label>
+            <input type="date">
+          </div>
+          <div class="field">
+            <label>Previously Employed To</label>
+            <input type="date">
+          </div>
+        </div>
+      </section>
+
+      <!-- Payment Section -->
+      <section class="form-section payment-box">
+        <div class="payment-tabs">
+          <button type="button" class="tab-btn active">💳 Card</button>
+          <button type="button" class="tab-btn"><span>pay</span> Amazon Pay</button>
+        </div>
+        <p class="secure-text">🔒 Secure, fast checkout with Link</p>
+        
+        <div class="field">
+          <label>Card number</label>
+          <input type="text" placeholder="1234 1234 1234 1234">
+        </div>
+        <div class="form-grid">
+          <div class="field">
+            <label>Expiration date</label>
+            <input type="text" placeholder="MM / YY">
+          </div>
+          <div class="field">
+            <label>Security code</label>
+            <input type="text" placeholder="CVC">
+          </div>
+        </div>
+        <div class="field">
+          <label>Full name</label>
+          <input type="text">
+        </div>
+        <div class="field">
+          <label>Country or region</label>
+          <select><option>United States</option></select>
+        </div>
+        <div class="field">
+          <label>Address line 1</label>
+          <input type="text">
+        </div>
+        <div class="field">
+          <label>Address line 2</label>
+          <input type="text" placeholder="Apt., suite, unit number, etc. (optional)">
+        </div>
+        <div class="field">
+          <label>City</label>
+          <input type="text" value="New York">
+        </div>
+      </section>
+
+      <!-- Other Info Section -->
+      <section class="form-section">
+        <h2>Other Info</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label>Emergency contact*</label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Emergency Contact Phone Number*</label>
+            <input type="tel" required>
+          </div>
+        </div>
+
+        <div class="discounted-box">
+          <p>Please reach out to me with information about the following discounted service from the FIND family network:</p>
+          <div class="checkbox-options">
+            <label><input type="checkbox" name="services" value="moving"> Moving Services</label>
+            <label><input type="checkbox" name="services" value="internet"> Internet</label>
+          </div>
+          <div class="field style-moving-date">
+            <label>Moving Date</label>
+            <input type="date">
+          </div>
+        </div>
+      </section>
+
+      <!-- Signature Section -->
+      <section class="form-section">
+        <h2>Your Signature</h2>
+        <div class="signature-container">
+          <button type="button" id="clearCanvas">🗑 clear</button>
+          <canvas id="signaturePad" width="500" height="150"></canvas>
+        </div>
+
+        <div class="agreement-row">
+          <label class="checkbox-container">
+            <input type="checkbox" required>
+            <span>I agree to this <a href="#">Application Agreement</a> and understand that my credit check fee is non-refundable.</span>
+          </label>
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <p>© 2023 by FIND Properties LLC & FIND Properties Partners USA - Licensed Real Estate Brokers</p>
+  </footer>
+
+  <script src="js/submit application.js"></script>
+</body>
+</html>

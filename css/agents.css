@@ -1,0 +1,368 @@
+:root {
+  --font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --text-muted: #9e9e9e;
+  --border-color: #e0e0e0;
+  --card-bg: #f5f5f5;
+  --btn-black: #111111;
+  --max-width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Styles */
+.header-placeholder {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.btn-signin {
+  background: var(--btn-black);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto 3rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.1rem;
+  outline: none;
+  background: transparent;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.hero-banner img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Intro Section */
+.intro-section {
+  padding: 5rem 0;
+}
+
+.intro-text {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Why Work Section */
+.why-work-section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.why-heading h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.acc-num {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  width: 50px;
+}
+
+.accordion-header h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.acc-icon {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem 0 0.5rem 50px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* Agents Grid */
+.agents-grid-section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 3rem;
+}
+
+.filter-group select {
+  border: none;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.agent-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: var(--card-bg);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.agent-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agent-actions {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-action {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.agent-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.agent-role, .agent-group, .agent-license {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.agent-group {
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.page-num {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.page-num.active {
+  background: #000;
+  color: #fff;
+}
+
+.page-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Footer Styles */
+.footer-placeholder {
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .intro-text {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIND Real Estate | Light Landing Page</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <a href="#" class="logo">FIND</a>
+    <nav class="header-nav">
+    <ul class="nav-menu">
+      <li><a href="search.html">Search</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      
+      <!-- Join Dropdown -->
+      <li>
+        <a href="#">Join <span class="chevron-icon"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="newyork.html">New York City</a></li>
+          <li><a href="philadelphia.html">Philadelphia</a></li>
+          
+          <li><a href="#" class="disabled">Boston (coming soon)</a></li>
+        </ul>
+      </li>
+      
+      <!-- Paperwork Dropdown -->
+      <li>
+        <a href="#">Paperwork <span class="chevron-icon"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="submit application.html">Submit an Application</a></li>
+
+        </ul>
+      </li>
+      
+
+      <!-- About Dropdown -->
+      <li>
+        <a href="#">About <span class="chevron-icon"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="press.html">Press</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    <a href="#" class="btn-signin">Sign In</a>
+  </header>
+
+  <!-- Virtual Scroll Track Wrapper -->
+  <div class="scroll-track">
+    <section class="hero-container">
+      <!-- Background Sky -->
+      <img class="bg-sky" src="assets/back.jpg" alt="Sky Background" />
+
+      <!-- Top-Right Floating Cloud -->
+      <img class="bg-cloud-right" src="assets/cloud.png" alt="Cloud Overlay" />
+
+      <!-- Stage 1 Central Hero Content -->
+      <div class="hero-content" id="heroContent">
+        <h1 class="hero-title">Find What Moves You</h1>
+        <p class="hero-subtitle">
+          Expert agents. Real guidance. <span>A clear path to find what’s next.</span>
+        </p>
+        <a href="#" class="btn-find">
+          Find Properties
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Stage 2 Thin White Outline Text Container -->
+      <!-- Stage 2 SVG Outline Text (Identical alignment to mask) -->
+      <div class="wireframe-container" id="wireframeContainer">
+        <svg class="wireframe-svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+          <text x="50%" y="42%" text-anchor="middle" class="outline-find-text">FIND</text>
+          <text x="50%" y="72%" text-anchor="middle" class="outline-sub-text">Real Estate</text>
+        </svg>
+      </div>
+
+      <!-- Stage 3 SVG Masked Image Container -->
+      <div class="masked-house-container" id="maskedContainer">
+        <img class="img-house-masked" src="assets/house.png" alt="House masked inside FIND Real Estate" />
+      </div>
+
+      <!-- Standalone Smoke Layer -->
+      <img class="img-smoke" id="imgSmoke" src="assets/smoke.png" alt="Fog and smoke overlay" />
+
+      <!-- House Composite Layer -->
+      <div class="building-wrapper" id="buildingWrapper">
+        <img class="img-house" src="assets/house.png" alt="Modern Apartment Building" />
+      </div>
+    </section>
+
+  </div>
+    <!-- Next Section: Why FIND -->
+  <section class="why-section">
+    <img class="smoke img-smoke" src="assets/smoke.png" alt="">
+    <div class="why-container">
+      <div class="why-header">
+        <span class="why-label">Why FIND</span>
+        <h2 class="why-title">
+          Your life’s changing. Don’t just find a place — find what’s next. 
+          <span class="why-title-light">We help you move forward with clarity, confidence, and the right agent by your side.</span>
+        </h2>
+      </div>
+
+      <!-- Video Container -->
+      <div class="why-video-wrapper">
+        <video class="why-video" autoplay loop muted playsinline>
+          <source src="assets/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Chevron Image Cards Section -->
+      <div class="chevron-section">
+        <h2 class="chevron-main-title">
+          This isn’t just <span>about real estate.</span>
+        </h2>
+
+        <!-- 4 Chevron Cards Grid -->
+        <div class="chevron-grid">
+          <div class="chevron-card">
+            <img src="assets/1 (1).jpg" alt="Real Estate Professional" />
+          </div>
+          <div class="chevron-card">
+            <img src="assets/2.jpg" alt="Modern Bedroom Interior" />
+          </div>
+          <div class="chevron-card">
+            <img src="assets/3.jpg" alt="Luxury Living Room" />
+          </div>
+          <div class="chevron-card">
+            <img src="assets/4.jpg" alt="Real Estate Agent" />
+          </div>
+        </div>
+
+        <!-- Bottom Subtitle Text -->
+        <div class="chevron-footer-text">
+          <p class="footer-text-bold">It’s about identity. Progress. Getting unstuck.</p>
+          <p class="footer-text-sub">
+            You’re not just looking for a place. <span>You’re looking for alignment. That’s what we help you find.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Real Estate, Rewired Section -->
+      <div class="rewired-section">
+        <!-- Left Column: Heading & CTA -->
+        <div class="rewired-left">
+          <h2 class="rewired-title">
+            Real Estate,<br />
+            <span>Rewired.</span>
+          </h2>
+          <a href="#" class="btn-rewired">
+            Start Your Search
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right Column: Numbered Steps -->
+        <div class="rewired-right">
+          <span class="steps-heading">Steps:</span>
+
+          <div class="step-item">
+            <span class="step-number">01</span>
+            <p class="step-text">
+              <strong>Talk to a Real Human.</strong> 
+              <span>We match you with an expert who actually listens.</span>
+            </p>
+          </div>
+
+          <div class="step-item">
+            <span class="step-number">02</span>
+            <p class="step-text">
+              <strong>Get Clarity.</strong> 
+              <span>We define what you really need, not just what’s available.</span>
+            </p>
+          </div>
+
+          <div class="step-item">
+            <span class="step-number">03</span>
+            <p class="step-text">
+              <strong>Move Forward.</strong> 
+              <span>We find what fits — and make it happen.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Agents Section -->
+      <div class="agents-section" id="agentsSection">
+        <!-- Left Column: Label + Portrait Image -->
+        <div class="agents-left">
+          <span class="agents-label">For Agents</span>
+          <div class="unwrap-wrapper unwrap-left">
+            <img src="assets/1.jpg" alt="Agent portrait" class="agent-img-portrait" />
+          </div>
+        </div>
+
+        <!-- Right Column: Header, Aerial Image, Description & CTA -->
+        <div class="agents-right">
+          <h2 class="agents-title">
+            Don’t Rent Your Career. <span>Own It.</span>
+          </h2>
+
+          <div class="unwrap-wrapper unwrap-right">
+            <img src="assets/2 (1).jpg" alt="Aerial neighborhood view" class="agent-img-aerial" />
+          </div>
+
+          <div class="agents-content">
+            <p class="agents-description">
+              <strong>At FIND, our agents don’t just work for the brand—they own a part of it.</strong>
+              <span>We give top performers real equity, so they’re invested in more than just your transaction—they're invested in your outcome. Agents are certified, supported, and equipped to deliver five-star service—because their success is tied to yours. You’re not just here to close deals — you’re building a career, a life, a legacy. We help agents find the company that gives them the support, tools, and leadership to thrive.</span>
+            </p>
+
+            <a href="#" class="btn-agents">
+              Join The Movement
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="testimonials-section">
+<!-- Testimonials Section -->
+      <div class="testimonials-section">
+        <h2 class="testimonials-title">
+          Don’t Take <span>Our Word for It.</span>
+        </h2>
+
+        <div class="testimonials-grid">
+          <!-- Left Column Image -->
+          <div class="testimonial-image-wrapper">
+            <div class="testimonial-image-container reveal-img-left">
+            <img src="assets/1 (2).jpg" alt="Happy Clients" />
+            </div>
+          </div>
+
+          <!-- Right Column Content -->
+          <div class="testimonial-content">
+            <div class="testimonial-top-bar">
+              <!-- Numbered Buttons -->
+              <div class="testimonial-nav">
+                <button class="nav-ball active" data-index="0">1</button>
+                <button class="nav-ball" data-index="1">2</button>
+                <button class="nav-ball" data-index="2">3</button>
+                <button class="nav-ball" data-index="3">4</button>
+                <button class="nav-ball" data-index="4">5</button>
+              </div>
+
+              <!-- Quote Icon -->
+              <div class="quote-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Dynamic Quote & Author Area -->
+            <div class="testimonial-body" id="testimonialBody">
+              <p class="quote-text" id="quoteText">
+                "Michael was a great realtor. Such a hard worker, dedicated to helping us find the perfect neighborhood, price point and home. He's a workaholic so he was available morning, noon and night. Tireless and dedicated. Would recommend him 100%!"
+              </p>
+
+              <div class="quote-meta">
+                <span class="author-name" id="authorName">BERNADETTE HOGAN</span>
+                <span class="meta-divider">/</span>
+                <span class="star-rating">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+<section  class="services-dark-section"> <!-- Dark Services Section -->
+      <div class="services-dark-section">
+        <div class="services-dark-container">
+          <!-- Section Header -->
+          <div class="services-header">
+            <span class="services-label">Services</span>
+            <h2 class="services-title">
+              How FIND<br />
+              <span>Can Help You</span>
+            </h2>
+          </div>
+
+          <!-- Service Cards List -->
+          <div class="service-cards-list">
+            
+            <!-- Card 1: Buy -->
+            <div class="service-card" style="--bg-image: url('assets/buy.jpg');">
+              <div class="service-card-bg"></div>
+              <div class="service-card-content">
+                <div class="service-info">
+                  <span class="service-num">1</span>
+                  <p class="service-desc">
+                    Buy smarter with expert agents backed by mortgage, legal, and appraisal pros—dialed in to get you the best deal, fast. We've done this over 10,000 times, and we know what wins.
+                  </p>
+                </div>
+                <div class="service-title-wrapper">
+                  <h3 class="service-name">Buy</h3>
+                </div>
+                <div class="service-arrow">
+                  <svg width="60" height="40" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="20" x2="55" y2="20"></line>
+                    <polyline points="38 5 55 20 38 35"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Sell -->
+            <div class="service-card" style="--bg-image: url('assets/sell.jpg');">
+              <div class="service-card-bg"></div>
+              <div class="service-card-content">
+                <div class="service-info">
+                  <span class="service-num">2</span>
+                  <p class="service-desc">
+                    Sell fast, sell high. Your listing gets pro staging, strategic pricing, constant open houses, and agents who never stop working until the right buyer signs.
+                  </p>
+                </div>
+                <div class="service-title-wrapper">
+                  <h3 class="service-name">Sell</h3>
+                </div>
+                <div class="service-arrow">
+                  <svg width="60" height="40" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="20" x2="55" y2="20"></line>
+                    <polyline points="38 5 55 20 38 35"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Rent -->
+            <div class="service-card" style="--bg-image: url('assets/rent.jpg');">
+              <div class="service-card-bg"></div>
+              <div class="service-card-content">
+                <div class="service-info">
+                  <span class="service-num">3</span>
+                  <p class="service-desc">
+                    Access hidden rentals before they hit the market through agents who know every landlord in town. With decades of NYC experience, we unlock the best deals you won't find online.
+                  </p>
+                </div>
+                <div class="service-title-wrapper">
+                  <h3 class="service-name">Rent</h3>
+                </div>
+                <div class="service-arrow">
+                  <svg width="60" height="40" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="20" x2="55" y2="20"></line>
+                    <polyline points="38 5 55 20 38 35"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Section Subtitle -->
+          <div class="services-footer">
+            <h3 class="services-footer-text">
+              Our certified agents guide you through every stage of real estate <span>with expert knowledge and reliable support.</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section class="support-beyond-section">
+      
+      <!-- Support Beyond Section -->
+          <div class="support-beyond-section">
+            <!-- Header Grid -->
+            <div class="support-header-grid">
+              <h2 class="support-title">
+                Support<br />
+                Beyond <span>Buying<br />and Selling</span>
+              </h2>
+
+              <div class="support-desc-wrapper">
+                <p class="support-desc">
+                  <strong>The real estate market never stands still — and neither do we.</strong> Our experts offer continued support beyond the sale, helping you maximize your investment.
+                </p>
+                <a href="#" class="btn-discover">
+                  Discover Our Services
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 6h16M11 1l6 5-6 5"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- 3-Column Image Feature Grid -->
+            <div class="support-cards-grid">
+              
+              <!-- Card 1: Mortgage Services -->
+              <div class="support-card">
+                <img src="assets/mortgage-services.jpg" alt="Mortgage Services" class="support-card-img" />
+                <div class="support-card-overlay">
+                  <h3 class="support-card-title">Mortgage<br />Services</h3>
+                  <a href="#" class="btn-learn-more">
+                    Learn More
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 5h12M8 1l5 4-5 4"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 2: Property Management -->
+              <div class="support-card">
+                <img src="assets/property-management.jpg" alt="Property Management" class="support-card-img" />
+                <div class="support-card-overlay">
+                  <h3 class="support-card-title">Property<br />Management</h3>
+                  <a href="#" class="btn-learn-more">
+                    Learn More
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 5h12M8 1l5 4-5 4"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 3: Development -->
+              <div class="support-card">
+                <img src="assets/development.jpg" alt="Construction and Real Estate Development" class="support-card-img" />
+                <div class="support-card-overlay">
+                  <h3 class="support-card-title">Construction<br />and Real Estate<br />Development</h3>
+                  <a href="#" class="btn-learn-more">
+                    Learn More
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 5h12M8 1l5 4-5 4"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+</section>
+
+<section class="blog-resources-section">
+  <div class="blog-container">
+    
+    <!-- Top Header Bar -->
+    <div class="blog-header">
+      <div class="header-left">
+        <h2>Blog <span>&amp; Resources</span></h2>
+      </div>
+      <div class="header-right">
+        <p>See how we’ve helped clients achieve their real estate dreams, one successful move at a time.</p>
+        <a href="#" class="btn-primary">
+          Visit Our Blog 
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Article 1 -->
+    <article class="blog-card">
+      <div class="card-content">
+        <span class="publish-date">2026-04-13</span>
+        <h3 class="card-title">Q1 2026 NYC Market Report</h3>
+        <p class="card-excerpt">
+          Q1 2026 saw strong rental demand, active sales, and shifting pricing across NYC. Here’s what it means heading into the spring market.
+        </p>
+        <a href="#" class="btn-outline">
+          Read More 
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="card-image-wrapper reveal-img-wrapper">
+        <img src="assets/5.png" alt="Q1 2026 NYC Market Report" />
+      </div>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="blog-card">
+      <div class="card-content">
+        <span class="publish-date">2026-04-01</span>
+        <h3 class="card-title">Philly Real Estate: A Winter Chill or a Spring Opportunity?</h3>
+        <p class="card-excerpt">
+          Record-low listings and steady price growth define a unique February for the Philadelphia Metro.
+        </p>
+        <a href="#" class="btn-outline">
+          Read More 
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="card-image-wrapper reveal-img-wrapper">
+        <img src="assets/6.jpg" alt="Philly Real Estate" />
+      </div>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="blog-card">
+      <div class="card-content">
+        <span class="publish-date">2026-03-09</span>
+        <h3 class="card-title">What $1M Buys in Different NYC Neighborhoods</h3>
+        <p class="card-excerpt">
+          Curious what $1M can still buy in today’s NYC market? Explore a snapshot of available listings across Manhattan and discover the surprising range of options at this key price point.
+        </p>
+        <a href="#" class="btn-outline">
+          Read More 
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="card-image-wrapper reveal-img-wrapper">
+        <img src="assets/7.jpg" alt="What $1M Buys in NYC" />
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA Banner Section -->
+<section class="cta-hero-section">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h1>Find You. We’ll Help You Get There.</h1>
+    <a href="#" class="btn-cta-white">
+      Let’s Get Started <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Top Row: Newsletter + Navigation Links -->
+    <div class="footer-top-row">
+      
+      <!-- Newsletter & Contact Info Block -->
+      <div class="footer-newsletter-block">
+        <h3>Subscribe to our Newsletter!</h3>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter address" required />
+          <button type="submit" aria-label="Subscribe">&rarr;</button>
+        </form>
+
+        <div class="contact-info-grid">
+          <div class="info-col">
+            <span class="info-label">Head Office</span>
+            <p>5 West 37th Street, 12th Floor,<br>New York, NY 10018</p>
+          </div>
+          <div class="info-col">
+            <span class="info-label">Email Us</span>
+            <p><a href="mailto:hello@findrealestate.com">hello@findrealestate.com</a></p>
+          </div>
+          <div class="info-col">
+            <span class="info-label">Call Us</span>
+            <p><a href="tel:+12129949965">+1 212 994 9965</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-nav-block">
+        <ul class="main-nav-links">
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Agents</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Agent Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social-block">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Massive Brand Logo Row -->
+    <div class="footer-brand-row">
+      <h1 class="brand-text-giant">FIND</h1>
+    </div>
+
+    <!-- Bottom Legal Row -->
+    <div class="footer-bottom-row">
+      <div class="legal-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Fair Housing Notice</a>
+        <a href="#">Reasonable Accommodation Notice</a>
+        <a href="#">Operating Procedure</a>
+        <a href="#">Press</a>
+        <a href="#">Housing Choice Vouchers Welcome</a>
+        <a href="#">Se Aceptan Vales de Elección de Vivienda</a>
+      </div>
+      <div class="copyright-info">
+        <span>FIND Real Estate</span>
+        <span>Copyright © 2026</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+  <!-- Cookie Consent Bar -->
+  <div class="cookie-bar" id="cookieBar">
+    <span>By using this site, you agree to our use of cookies. <a href="#">Privacy Policy</a></span>
+    <div class="cookie-buttons">
+      <button class="cookie-btn btn-accept" id="acceptBtn">Accept</button>
+      <button class="cookie-btn btn-decline" id="declineBtn">Decline</button>
+      <button class="cookie-btn btn-prefs">Manage Preferences</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  
+   <script src="js/scroll.js"></script>
+</body>
+</html>

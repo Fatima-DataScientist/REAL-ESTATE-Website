@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Search</title>
+  <link rel="stylesheet" href="css/search.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+
+  <main class="search-page-container">
+    
+    <section class="filter-bar">
+      <div class="search-input-wrapper">
+        <input type="text" id="searchInput" placeholder="Property address or agent name/email" value="Manhattan">
+        <button id="clearSearchBtn" class="clear-btn">&times;</button>
+      </div>
+
+      <div class="dropdown-filters">
+        <select id="neighborhoodFilter" class="filter-select">
+          <option value="">Neighborhoods</option>
+          <option value="manhattan">Manhattan</option>
+          <option value="brooklyn">Brooklyn</option>
+          <option value="queens">Queens</option>
+        </select>
+
+        <select id="typeFilter" class="filter-select">
+          <option value="for-sale">For Sale</option>
+          <option value="for-rent">For Rent</option>
+        </select>
+
+        <select id="priceFilter" class="filter-select">
+          <option value="">Price</option>
+          <option value="0-500k">Under $500k</option>
+          <option value="500k-1m">$500k - $1M</option>
+          <option value="1m+">$1M+</option>
+        </select>
+
+        <select id="propertyTypeFilter" class="filter-select">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+        </select>
+
+        <select id="bedsFilter" class="filter-select">
+          <option value="">Beds & Baths</option>
+          <option value="1">1+ Bed</option>
+          <option value="2">2+ Beds</option>
+          <option value="3">3+ Beds</option>
+        </select>
+      </div>
+
+      <div class="view-toggle">
+        <button id="mapViewBtn" class="toggle-btn active">Map</button>
+        <button id="listViewBtn" class="toggle-btn">List</button>
+      </div>
+    </section>
+
+    <section class="content-split-view">
+      
+      <div id="map" class="map-container"></div>
+
+      <div id="listingsContainer" class="listings-container">
+        
+        <article class="property-card">
+          <div class="card-image-wrapper">
+            <img src="assets/search/01a04efe-55ae-7d86-b1bb-2cc1fb81a2cd.jpg" alt="Property Image" class="property-img">
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-details">
+            <h3 class="price">$1,250,000</h3>
+            <p class="specs">2 Beds • 2 Baths • 1,100 sqft</p>
+            <p class="address">123 Upper East Side, Manhattan, NY</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="card-image-wrapper">
+            <img src="assets/search/01a04efe-57e6-7375-8050-460d72688e9e.jpg" alt="Property Image" class="property-img">
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-details">
+            <h3 class="price">$2,400,000</h3>
+            <p class="specs">3 Beds • 3 Baths • 1,850 sqft</p>
+            <p class="address">456 SoHo West, Manhattan, NY</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="card-image-wrapper">
+            <img src="assets/search/144356711_CR-3974_-_Web.jpg" alt="Property Image" class="property-img">
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-details">
+            <h3 class="price">$890,000</h3>
+            <p class="specs">1 Bed • 1 Bath • 750 sqft</p>
+            <p class="address">789 Chelsea District, Manhattan, NY</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <div class="card-image-wrapper">
+            <img src="assets/search/144746527.jpg" alt="Property Image" class="property-img">
+            <span class="badge">For Sale</span>
+          </div>
+          <div class="card-details">
+            <h3 class="price">$3,100,000</h3>
+            <p class="specs">4 Beds • 3.5 Baths • 2,400 sqft</p>
+            <p class="address">101 Greenwich Village, Manhattan, NY</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+
+
+  <script src="js/search.js"></script>
+   <script src="js/scroll.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+/* Step up one directory to load root base styles correctly */
+@import url('../style.css');
+
+/* Global Variables & Overrides */
+:root {
+    --primary-color: #111111;
+    --muted-color: #6c757d;
+    --accent-color: #000000;
+    --bg-light: #f8f9fa;
+    --card-dark-bg: #1a1a1a;
+    --border-color: #e0e0e0;
+}
+
+/* General Layout & Base Containers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.text-muted {
+    color: var(--muted-color);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Button Components */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-dark {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-dark:hover {
+    background-color: #333333;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border: 1px solid #ffffff;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-light-full, .btn-dark-full {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-light-full {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.btn-dark-full {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-logo {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Intro Section */
+.intro-section {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.intro-left, .intro-right {
+    flex: 1;
+}
+
+.tag-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    color: var(--muted-color);
+}
+
+.intro-small-img, .intro-large-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.intro-small-img-wrapper {
+    max-width: 80%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.lead-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Accordion Component & Why Choose Section */
+.why-choose-section {
+    display: flex;
+    gap: 60px;
+}
+
+.why-choose-left {
+    flex: 1;
+}
+
+.why-choose-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.why-choose-right {
+    flex: 1.5;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 24px 0;
+    cursor: pointer;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-body {
+    display: none;
+    padding-top: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+/* Pricing Section */
+.pricing-section {
+    background-color: #fafafa;
+    padding: 80px 0;
+}
+
+.pricing-title {
+    font-size: 2.5rem;
+}
+
+.pricing-subtitle {
+    margin-bottom: 40px;
+    color: var(--muted-color);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.card-dark {
+    background-color: var(--card-dark-bg);
+    color: #ffffff;
+}
+
+.card-white {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+
+.benefits-list {
+    margin-top: 30px;
+}
+
+.benefits-list h4 {
+    margin-bottom: 15px;
+}
+
+.benefits-list ul {
+    list-style: none;
+}
+
+.benefits-list li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Enterprise Banner */
+.enterprise-banner {
+    background-color: var(--card-dark-bg);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.enterprise-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Ownership Section */
+.ownership-section {
+    display: flex;
+    gap: 60px;
+}
+
+.ownership-title {
+    flex: 1;
+}
+
+.ownership-title h2 {
+    font-size: 2.5rem;
+}
+
+.ownership-text {
+    flex: 1.5;
+}
+
+.ownership-text p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Amenities & Additions Grid */
+.amenities-title, .additions-title {
+    font-size: 2.5rem;
+}
+
+.amenities-subtitle, .additions-subtitle {
+    margin-bottom: 40px;
+    color: var(--muted-color);
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.amenity-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.amenity-card.img-block {
+    padding: 0;
+    overflow: hidden;
+}
+
+.amenity-card.img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.amenity-icon {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.checklist-grid, .additions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.check-item, .addition-item {
+    font-size: 0.95rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Stats Banner Section */
+.stats-banner-section {
+    position: relative;
+    background-color: var(--card-dark-bg);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.stats-header {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.stats-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.stats-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Offices Section */
+.offices-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.offices-header h2 {
+    font-size: 2.5rem;
+}
+
+.offices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.office-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.office-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.office-card p {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+}
+
+/* MLS Section */
+.mls-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mls-title h2 {
+    font-size: 2.5rem;
+}
+
+.mls-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.mls-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.mls-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.check-mark {
+    font-weight: bold;
+}
+
+/* Culture & Expertise Sections */
+.expertise-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.expertise-left h2, .culture-title {
+    font-size: 2.5rem;
+}
+
+.culture-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .pricing-grid, 
+    .amenities-grid, 
+    .offices-grid, 
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .intro-section, 
+    .why-choose-section, 
+    .ownership-section, 
+    .expertise-section {
+        flex-direction: column;
+    }
+
+    .enterprise-banner {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-grid, 
+    .amenities-grid, 
+    .offices-grid, 
+    .checklist-grid, 
+    .additions-grid, 
+    .mls-grid, 
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-logo { font-size: 2.8rem; }
+    .hero-title { font-size: 1.8rem; }
+}

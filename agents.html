@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Agents | FIND Real Estate</title>
+  <link rel="stylesheet" href="css/agents.css">
+</head>
+<body>
+
+  <!-- Header Placeholder -->
+<div id="header-placeholder"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">Meet Our Agents</h1>
+        <p class="hero-subtitle">Over 1,000 Agents Dedicated to Moving You Forward</p>
+        
+        <div class="search-bar-wrapper">
+          <input type="text" id="agentSearch" placeholder="Search by agent" class="search-input">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="m2.472 20.469 4.694-4.694a8.26 8.26 0 1 1 1.06 1.06L3.533 21.53a.751.751 0 0 1-1.06-1.061m17.78-9.97a6.75 6.75 0 1 0-6.75 6.75 6.757 6.757 0 0 0 6.75-6.75"/>
+          </svg>
+        </div>
+
+        <div class="hero-banner">
+          <img src="assets/agents/agents banner.jpg" alt="Agents Banner">
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Text Section -->
+    <section class="intro-section">
+      <div class="container">
+        <h2 class="intro-text">
+          With a team of over 1,000 Certified Agents across diverse markets, FIND offers you unmatched expertise and personalized support for every real estate need. <span class="text-muted">Each FIND agent is committed to helping you take the next step with confidence, backed by local insights and a deep understanding of your goals.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- Accordion / Why Work Section -->
+    <section class="why-work-section">
+      <div class="container why-grid">
+        <div class="why-heading">
+          <h2>Why Work with a <span class="text-muted">FIND Agent?</span></h2>
+        </div>
+        <div class="accordion-list">
+          <div class="accordion-item active">
+            <div class="accordion-header">
+              <span class="acc-num">01</span>
+              <h3>Certified Professionals</h3>
+              <span class="acc-icon">&times;</span>
+            </div>
+            <div class="accordion-content">
+              <p>Every agent at FIND completes a rigorous certification process to ensure they have the skills, market knowledge, and dedication to provide a smooth and informed experience. When you work with FIND, you're working with an agent you can trust.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="acc-num">02</span>
+              <h3>Locally Focused, Globally Minded</h3>
+              <span class="acc-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>Our agents combine deep local neighborhood knowledge with broader market perspectives to help guide your real estate strategy anywhere.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="acc-num">03</span>
+              <h3>Agent-Owned Brokerage</h3>
+              <span class="acc-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>Because our agents have direct ownership interest in our company, they are personally invested in providing superior client service.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="acc-num">04</span>
+              <h3>Flexible Support for All Needs</h3>
+              <span class="acc-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>From buying and selling to renting and investment portfolio creation, our team adapts flexibly to your exact parameters.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="acc-num">05</span>
+              <h3>Innovative Tools & Technology</h3>
+              <span class="acc-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>Leverage cutting-edge platforms, real-time listing feeds, and proprietary analytics designed to simplify your transaction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certified Agents Grid -->
+    <section class="agents-grid-section">
+      <div class="container">
+        <h2 class="section-title">Certified <span class="text-muted">Agents</span></h2>
+        
+        <div class="filter-bar">
+          <div class="filter-group">
+            <select id="locationFilter">
+              <option value="">All Locations</option>
+              <option value="ny">New York</option>
+              <option value="fl">Florida</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <select id="specialtyFilter">
+              <option value="">All Specialties</option>
+              <option value="residential">Residential</option>
+              <option value="commercial">Commercial</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="agents-grid" id="featuredAgents">
+          <!-- Featured Agent 1 -->
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/20251003_192738_jamie-sittner (1).jpg" alt="Jamie Sittner">
+              <div class="agent-actions">
+                <button class="btn-action" title="Send Message">✈</button>
+                <button class="btn-action" title="Call Agent">📞</button>
+              </div>
+            </div>
+            <h3 class="agent-name">Jamie Sittner</h3>
+            <p class="agent-role">Licensed Associate Real Estate Broker</p>
+            <p class="agent-group">FIND ADVISORS</p>
+            <p class="agent-license">License number: 10301223502</p>
+          </div>
+
+          <!-- Featured Agent 2 -->
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/20250901_110502_IMG_2383.jpg" alt="Tia Tucciarone">
+              <div class="agent-actions">
+                <button class="btn-action" title="Send Message">✈</button>
+                <button class="btn-action" title="Call Agent">📞</button>
+              </div>
+            </div>
+            <h3 class="agent-name">Tia Tucciarone</h3>
+            <p class="agent-role">Licensed Associate Real Estate Broker</p>
+            <p class="agent-group">FIND ADVISORS</p>
+            <p class="agent-license">License number: 10301220681</p>
+          </div>
+
+          <!-- Featured Agent 3 -->
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/20251015_090514_Martina.jpg" alt="Jessie O'Hare">
+              <div class="agent-actions">
+                <button class="btn-action" title="Send Message">✈</button>
+                <button class="btn-action" title="Call Agent">📞</button>
+              </div>
+            </div>
+            <h3 class="agent-name">Jessie O'Hare</h3>
+            <p class="agent-role">Licensed Real Estate Salesperson</p>
+            <p class="agent-group">FIND ADVISORS</p>
+            <p class="agent-license">License number: 10401347191</p>
+          </div>
+
+          <!-- Featured Agent 4 -->
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/20251111_084515_Olga.jpg" alt="Jules Borbely">
+              <div class="agent-actions">
+                <button class="btn-action" title="Send Message">✈</button>
+                <button class="btn-action" title="Call Agent">📞</button>
+              </div>
+            </div>
+            <h3 class="agent-name">Jules Borbely</h3>
+            <p class="agent-role">Licensed Real Estate Broker</p>
+            <p class="agent-group">FIND PROPERTIES</p>
+            <p class="agent-license">License number: 10491213603</p>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <span class="page-num active">1</span>
+          <span class="page-num">2</span>
+          <button class="page-next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Agents Grid -->
+    <section class="agents-grid-section">
+      <div class="container">
+        <h2 class="section-title">More <span class="text-muted">Agents</span></h2>
+
+        <div class="agents-grid" id="moreAgents">
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/avi-baron-cpa.jpg" alt="Avi Baron CPA">
+            </div>
+            <h3 class="agent-name">Avi Baron CPA</h3>
+            <p class="agent-role">Licensed Real Estate Salesperson</p>
+            <p class="agent-group">FIND GROUP</p>
+            <p class="agent-license">License number: 10401276583</p>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/ofer-avital.jpg" alt="John Murphy">
+            </div>
+            <h3 class="agent-name">John Murphy</h3>
+            <p class="agent-role">Licensed Associate Real Estate Broker</p>
+            <p class="agent-group">FIND GROUP</p>
+            <p class="agent-license">License number: 10301207045</p>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/yukiko-tomizawa.jpg" alt="Sungae (Annie) Kim">
+            </div>
+            <h3 class="agent-name">Sungae (Annie) Kim</h3>
+            <p class="agent-role">Licensed Real Estate Salesperson</p>
+            <p class="agent-group">FIND GROUP</p>
+            <p class="agent-license">License number: 10401314479</p>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/yuan-cici-cao.jpg" alt="Alfred Doci">
+            </div>
+            <h3 class="agent-name">Alfred Doci</h3>
+            <p class="agent-role">Licensed Real Estate Salesperson</p>
+            <p class="agent-group">FIND GROUP</p>
+            <p class="agent-license">License number: 10401245033</p>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/ryan-ohare.jpeg" alt="Martina Dechevska">
+            </div>
+            <h3 class="agent-name">Martina Dechevska</h3>
+            <p class="agent-role">Licensed Associate Real Estate Broker</p>
+            <p class="agent-group">FIND REAL ESTATE LLC</p>
+            <p class="agent-license">License number: 10301215305</p>
+          </div>
+
+          <div class="agent-card">
+            <div class="agent-img-wrapper">
+              <img src="assets/agents/jodi-a-koenig.jpg" alt="Eyal Zabari">
+            </div>
+            <h3 class="agent-name">Eyal Zabari</h3>
+            <p class="agent-role">Licensed Real Estate Salesperson</p>
+            <p class="agent-group">FIND GROUP</p>
+            <p class="agent-license">License number: 40ZA1119549</p>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <span class="page-num active">1</span>
+          <span class="page-num">2</span>
+          <span class="page-num">3</span>
+          <span class="page-dots">...</span>
+          <span class="page-num">41</span>
+          <button class="page-next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Placeholder -->
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+  <script src="js/agents.js"></script>
+   <script src="js/scroll.js"></script>
+
+</body>
+</html>

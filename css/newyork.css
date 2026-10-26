@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #111;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-muted {
+    color: #8e8e93;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-dark {
+    background-color: #111;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 1px solid #ccc;
+    color: #111;
+}
+
+.btn-light-full, .btn-dark-full {
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.btn-light-full {
+    background-color: #fff;
+    color: #111;
+}
+
+.btn-dark-full {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-logo {
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 0.8;
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Intro Section */
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+.tag-label {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.intro-small-img-wrapper {
+    margin-top: 100px;
+    width: 220px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.intro-small-img, .intro-large-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.intro-large-img-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Why Choose FIND */
+.why-choose-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 60px 20px 100px;
+}
+
+.why-choose-left h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Pricing Section */
+.pricing-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.pricing-title {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 60px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.pricing-card {
+    border-radius: 12px;
+    padding: 40px 30px;
+}
+
+.card-dark {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.card-white {
+    background-color: #fff;
+    color: #111;
+}
+
+.pricing-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #888;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+
+.card-white .card-desc {
+    color: #666;
+}
+
+.benefits-list h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.benefits-list ul {
+    list-style: none;
+}
+
+.benefits-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+/* Enterprise Banner */
+.enterprise-banner {
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.enterprise-content h3 {
+    font-size: 2rem;
+}
+
+.enterprise-content p {
+    color: #aaa;
+}
+
+.enterprise-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-light {
+    background: #fff;
+    color: #111;
+}
+
+.btn-outline-light {
+    border: 1px solid #555;
+    color: #fff;
+}
+
+/* Ownership Section */
+.ownership-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 100px 20px;
+}
+
+.ownership-title h2 {
+    font-size: 3rem;
+}
+
+.ownership-text p {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Amenities Grid */
+.amenities-section {
+    padding-bottom: 100px;
+}
+
+.amenities-title {
+    font-size: 3rem;
+}
+
+.amenities-subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    margin-bottom: 60px;
+}
+
+.amenity-card {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    height: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.amenity-card.img-block {
+    padding: 0;
+}
+
+.amenity-card.img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.amenity-icon {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.amenity-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.amenity-card p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Checklist Grid */
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 40px;
+}
+
+.check-item {
+    font-size: 1.05rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .intro-section, .why-choose-section, .ownership-section {
+        grid-template-columns: 1fr;
+    }
+    .pricing-grid, .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .enterprise-banner {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-logo { font-size: 5rem; }
+    .hero-title { font-size: 4rem; }
+}
+
+@media (max-width: 600px) {
+    .pricing-grid, .amenities-grid, .checklist-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Business Additions Section */
+.additions-section {
+    padding: 80px 20px;
+}
+
+.additions-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.additions-subtitle {
+    color: #444;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.additions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px;
+}
+
+.addition-item {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Stats Banner Section */
+.stats-banner-section {
+    position: relative;
+    background: url('assets/stats-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    margin: 40px 0 100px;
+}
+
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.stats-content {
+    position: relative;
+    z-index: 2;
+}
+
+.stats-header {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #a0a0a0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.stats-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.stats-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.stat-number {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* Our Offices Section */
+.offices-section {
+    padding-bottom: 100px;
+}
+
+.offices-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.offices-header h2 {
+    font-size: 3.5rem;
+}
+
+.expand-text h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.offices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+}
+
+.office-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.office-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.office-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Realtor Boards & MLS Section */
+.mls-section {
+    padding-bottom: 100px;
+}
+
+.mls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.mls-title h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+.mls-subtitle-wrap h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mls-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.mls-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.mls-card {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 30px 20px;
+    min-height: 180px;
+}
+
+.check-mark {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mls-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Expertise Callout Section */
+.expertise-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.expertise-left h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+.expertise-right p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.expertise-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Culture Gallery Section */
+.culture-section {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.culture-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive Styles for Added Sections */
+@media (max-width: 1024px) {
+    .mls-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .additions-grid, 
+    .offices-grid, 
+    .mls-grid, 
+    .gallery-grid, 
+    .expertise-section, 
+    .offices-header, 
+    .mls-header {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .culture-title, 
+    .additions-title, 
+    .expertise-left h2, 
+    .mls-title h2, 
+    .offices-header h2 {
+        font-size: 2.5rem;
+    }
+}
